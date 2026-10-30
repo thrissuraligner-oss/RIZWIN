@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#FAF8FF;font:14px system-ui}
+.box{width:760px;height:460px;position:relative;margin:10px auto;border-radius:20px;overflow:hidden}
+.dark{background:radial-gradient(120% 90% at 50% 30%,#3a2a5e,#140c26 75%)}
+.light{background:radial-gradient(120% 90% at 50% 20%,#ffffff,#ece6f8 80%)}
+.sim3d,.thermo3d,.story3d,.closing3d{position:absolute;inset:0}
+.r3d{width:100%!important;height:100%!important;display:block}
+</style></head><body>
+<div id="sim" data-3d="sim"><div class="box dark"><div class="sim3d"></div></div><input type="range" data-range min=0 max=100 value=0><span data-stage></span><b data-measure></b>
+<button data-view="front">F</button><button data-view="side">S</button><button data-view="three">T</button><div class="sim-tabs"><button data-k="crowd">c</button><button data-k="space">s</button><button data-k="open">o</button><button data-k="deep">d</button><button data-k="forward">f</button></div></div>
+<figure id="spaces" data-3d="spaces" class="box light"><div class="hud"><input type="range" min=0 max=100 value=0><div class="rd"><span></span><b></b></div></div></figure>
+<div id="story" data-3d="story"><div class="box light"><div class="story3d"></div></div><article class="chapter" data-ch="1">1</article></div>
+<div id="thermo" data-3d="thermo"><div class="box light"><div class="thermo3d"></div></div><p data-readout></p><input type="range" data-scrub min=0 max=1000><button data-play><span>Play</span></button></div>
+<script type="module">import {mount} from './dental3d.js'; document.querySelectorAll('[data-3d]').forEach(mount); window.__ok=1;</script>
+</body></html>

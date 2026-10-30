@@ -1,0 +1,46 @@
+# alignerthrissur.com
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /thank-you/
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+
+# Search and answer-engine crawlers: allowed so the site can be retrieved and cited
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Applebot
+Allow: /
+
+# Model-training crawlers (licensing choice, not a search-visibility factor): allowed by default
+# OpenAI model training
+User-agent: GPTBot
+Allow: /
+# Anthropic model training
+User-agent: ClaudeBot
+Allow: /
+# Gemini/Vertex training and grounding
+User-agent: Google-Extended
+Allow: /
+# Apple Intelligence training opt-out
+User-agent: Applebot-Extended
+Allow: /
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://alignerthrissur.com/sitemap.xml

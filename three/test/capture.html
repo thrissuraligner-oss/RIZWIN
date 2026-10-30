@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#000}.h{position:relative}.sim3d,.story3d,.thermo3d,.closing3d{display:block}.closing3d{height:520px}</style></head><body>
+<div id="sim" data-3d="sim"><div class="sim3d h" style="width:960px;height:600px"></div><input type="range" data-range min=0 max=100 value=0></div>
+<figure id="spaces" class="closing" data-3d="spaces" style="margin:0;width:1000px"><div class="hud"><input type="range" min=0 max=100 value=0><span class="rd"><span></span><b></b></span></div></figure>
+<div id="story" data-3d="story"><div class="story3d h" style="width:960px;height:540px"></div></div>
+<div id="thermo" data-3d="thermo"><div class="thermo3d h" style="width:1000px;height:600px"></div><p data-readout></p><input type="range" data-scrub min=0 max=1000><button data-play><span>Play</span></button></div>
+<script type="module">import {mount} from './dental3d.js'; for (const id of ['sim','spaces','story','thermo']) mount(document.getElementById(id)); window.__ready = true;</script></body></html>

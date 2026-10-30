@@ -1,0 +1,15 @@
+# Netlify configuration for alignerthrissur.com
+# The site is pre-built static HTML in public/ (no build step). Functions in netlify/functions power the Instagram feed.
+[build]
+  publish = "public"
+  command = "echo 'Static site: no build step'"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Headers and redirects live in public/_headers and public/_redirects (Netlify reads both).
+
+[build.environment]
+  # Node 22 for installing @netlify/blobs and bundling the functions (functions run on the same major version)
+  NODE_VERSION = "22"

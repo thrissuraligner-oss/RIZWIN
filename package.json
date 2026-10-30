@@ -1,0 +1,9 @@
+{
+  "name": "alignerthrissur-site",
+  "private": true,
+  "description": "alignerthrissur.com: static site with Netlify Functions for the Instagram reels feed",
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  }
+}

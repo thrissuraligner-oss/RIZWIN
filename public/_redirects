@@ -1,0 +1,8 @@
+# Netlify redirects. www -> apex (Netlify also redirects domain aliases to the primary domain). Trailing slashes are canonical.
+https://www.alignerthrissur.com/* https://alignerthrissur.com/:splat 301!
+http://www.alignerthrissur.com/* https://alignerthrissur.com/:splat 301!
+/treatments/brava /treatments/lingual-braces/ 301
+/treatments/brava/ /treatments/lingual-braces/ 301
+/brava /treatments/lingual-braces/ 301
+/aligner-cost /aligner-cost-thrissur/ 301
+/orthodontist-thrissur /locations/thrissur/ 301
